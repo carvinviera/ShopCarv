@@ -6,7 +6,7 @@
     using System.Threading.Tasks;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    public class Product
+    public class Product :  IEntity
     {
         [Key]
         public int Id { get; set; }

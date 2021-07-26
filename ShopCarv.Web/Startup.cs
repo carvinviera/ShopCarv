@@ -11,6 +11,7 @@ namespace ShopCarv.Web
     using Microsoft.EntityFrameworkCore;
     using ShopCarv.Dato.ModelsDB.Entities;
     using Microsoft.AspNetCore.Identity;
+    using ShopCarv.Dato.Helper;
 
     public class Startup
     {
@@ -41,12 +42,13 @@ namespace ShopCarv.Web
             services.AddControllersWithViews();
             services.AddMvc();
 
-            
-
             services.AddTransient<SeedDB>();
             //services.AddTransient<SeedDbCoreInDato>(); otro Seed que queramos
 
-            services.AddScoped<IRepository, Repository>();
+            //services.AddScoped<IRepository, Repository>(); se quita por implementar el Genric Repositorio y los de cada tabla
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICountryRepository, CountryRepository>();
+            services.AddScoped<IUserHelper, UserHelper>();
             //services.AddScoped<aplicacionBusiness>();
             //services.AddScoped<IRepository, MockRepository>(); //se la interfaz para cambiar rapidamente entre repositorios Quizas uno de prueba y
             //luego el real... o para pruebas unitarias
