@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ShopCarv.Business
+﻿namespace ShopCarv.Business
 {
     public class Class1
     {

@@ -1,11 +1,10 @@
 namespace ShopCarv.Web
 {
+    using Dato.ModelsDB;
     using Microsoft.AspNetCore;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
-    using Dato.ModelsDB;
-    using Dato.Helper;
     public class Program
     {
         public static void Main(string[] args)

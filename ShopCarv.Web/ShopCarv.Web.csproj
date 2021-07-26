@@ -26,4 +26,8 @@
     <ProjectReference Include="..\ShopCarv.Dato\ShopCarv.Dato.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\Products\" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/solutionscarv-dbserver/databases/ShopCarv.Web_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:dbShopCarvEntities",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

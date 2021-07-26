@@ -1,11 +1,4 @@
-﻿using ShopCarv.Dato.ModelsDB.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopCarv.Dato.ModelsDB
+﻿namespace ShopCarv.Dato.ModelsDB
 {
     public class MockRepository //: IRepository por ahora no se va a usar
     {

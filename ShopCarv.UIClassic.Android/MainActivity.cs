@@ -1,6 +1,5 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Runtime;
 using AndroidX.AppCompat.App;
 
 namespace ShopCarv.UIClassic.Android

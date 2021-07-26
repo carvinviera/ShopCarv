@@ -3,15 +3,14 @@ namespace ShopCarv.Web
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.HttpsPolicy;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
-    using ShopCarv.Dato.ModelsDB;
-    using Microsoft.EntityFrameworkCore;
-    using ShopCarv.Dato.ModelsDB.Entities;
-    using Microsoft.AspNetCore.Identity;
     using ShopCarv.Dato.Helper;
+    using ShopCarv.Dato.ModelsDB;
+    using ShopCarv.Dato.ModelsDB.Entities;
 
     public class Startup
     {
@@ -25,7 +24,7 @@ namespace ShopCarv.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(cfg => cfg.UseSqlServer(this.Configuration.GetConnectionString("dbShopCarvEntities")));
+            services.AddDbContext<DataContext>(cfg => cfg.UseSqlServer(Configuration.GetConnectionString("dbShopCarvEntities")));
 
             services.AddIdentity<User, IdentityRole>(cfg =>
             {

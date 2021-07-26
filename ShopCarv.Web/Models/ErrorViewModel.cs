@@ -1,5 +1,3 @@
-using System;
-
 namespace ShopCarv.Web.Models
 {
     public class ErrorViewModel

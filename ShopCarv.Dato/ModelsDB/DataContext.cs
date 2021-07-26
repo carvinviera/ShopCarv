@@ -1,8 +1,8 @@
 ﻿namespace ShopCarv.Dato.ModelsDB
 {
-    using Microsoft.EntityFrameworkCore;
     using Entities;
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;
 
     public class DataContext : IdentityDbContext<User>
     {
